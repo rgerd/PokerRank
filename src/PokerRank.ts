@@ -42,7 +42,9 @@ export function rankScores(rawScores: number[][]): number[]
     const sortedScores: number[][] = rawScores.slice().sort((scoresA, scoresB) =>
         compareArrays(scoresA, scoresB)).reverse();
 
-    return rawScores.map((rawScore) => sortedScores.indexOf(rawScore));
+    return rawScores.map((rawScore) =>
+        sortedScores.findIndex((sortedScore) =>
+            compareArrays(rawScore, sortedScore) === 0));
 }
 
 export function rankHands(hands: TexasHoldEmHand[], board: TexasHoldEmBoard): number[]

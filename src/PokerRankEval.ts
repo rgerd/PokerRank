@@ -43,7 +43,7 @@ export function getFlush(sortedGroups: CardDefinition[][]): number[]
         && sortedGroups.map((group) => group[0].suit)
             .reduce((sharedSuit, currentSuit) =>
                 sharedSuit === currentSuit ? sharedSuit : undefined,
-                sortedGroups[0][0].suit) !== undefined;
+            sortedGroups[0][0].suit) !== undefined;
 
     return isFlush
         ? sortedGroups.map((group) => group[0].value)
