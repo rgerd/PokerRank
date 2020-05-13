@@ -43,7 +43,7 @@ export function getFlush(sortedGroups: CardDefinition[][]): number[]
         && sortedGroups.map((group) => group[0].suit)
             .reduce((sharedSuit, currentSuit) =>
                 sharedSuit === currentSuit ? sharedSuit : undefined,
-            sortedGroups[0][0].suit) !== undefined;
+                sortedGroups[0][0].suit) !== undefined;
 
     return isFlush
         ? sortedGroups.map((group) => group[0].value)
@@ -105,15 +105,15 @@ export function getScore(
 
 export const orderedScoreFunctions =
     [
-        getStraightFlush, // 0
-        getFourOfAKind,   // 1, 2
-        getFullHouse,     // 3, 4
-        getFlush,         // 5, 6, 7, 8, 9
-        getStraight,      // 10
-        getThreeOfAKind,  // 11, 12, 13
-        getTwoPair,       // 14, 15, 16
-        getOnePair,       // 17, 18, 19, 20
-        getHighCard       // 21, 22, 23, 24, 25
+        getStraightFlush,
+        getFourOfAKind,
+        getFullHouse,
+        getFlush,
+        getStraight,
+        getThreeOfAKind,
+        getTwoPair,
+        getOnePair,
+        getHighCard
     ];
 
 // Applies the hand scoring functions in order of precedence (see above).
