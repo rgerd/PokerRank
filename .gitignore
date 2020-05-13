@@ -3,3 +3,4 @@ built/
 tsconfig.tsbuildinfo
 .DS_Store
 .vs/
+*.tgz

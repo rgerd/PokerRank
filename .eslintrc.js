@@ -2,7 +2,7 @@ module.exports = {
 	"root": true,
 	"env": {
 		"es6": true,
-		"node": true,
+		"node": true
 	},
 	"extends": [
 		"eslint:recommended",
@@ -26,7 +26,7 @@ module.exports = {
 	],
 	"rules": {
 		"block-spacing": ["warn", "always"],
-		"brace-style": ["warn", "allman", {"allowSingleLine": true}],
+		"brace-style": ["warn", "allman"],
 		"curly": ["warn", "all"],
 		"default-param-last": "warn",
 		"eol-last": ["warn", "always"],

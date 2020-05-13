@@ -1,13 +1,14 @@
 {
-  "name": "poker-rank",
-  "version": "1.0.0",
-  "main": "samples/index.js",
+  "name": "@rgerd/poker-rank",
+  "version": "1.0.1",
+  "main": "built/index.js",
+  "types": "built/index.d.ts",
   "scripts": {
     "build": "eslint --fix --ext .ts src && tsc --build",
-    "run": "node .",
+    "run": "node built/samples/ScoreAndRank.js",
     "iterate": "npm run build && npm run run"
   },
-  "author": "",
+  "author": "Robert Gerdisch",
   "license": "ISC",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.32.0",
@@ -16,5 +17,9 @@
     "json-schema": "^0.2.5",
     "typescript": "^3.7.5"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgerd/PokerRank.git"
+  }
 }

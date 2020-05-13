@@ -11,7 +11,9 @@ export function compareArrays(arr1: number[], arr2: number[]): number
     for (let i = 0; i < minLength; i++)
     {
         if (arr1[i] !== arr2[i])
-        { return arr1[i] < arr2[i] ? -1 : 1; } 
+        {
+            return arr1[i] < arr2[i] ? -1 : 1; 
+        } 
     }
     return 0;
 }
