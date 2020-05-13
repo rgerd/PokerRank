@@ -79,5 +79,5 @@ and fourth hands' pairs (9 < 13), and so it is ranked last.
 
 ## TODO:
 
-[X] Give equivalent hands equal rank.
-[] Write unit tests.
+- [X] Give equivalent hands equal rank.
+- [ ] Write unit tests.
