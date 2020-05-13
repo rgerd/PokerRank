@@ -2,7 +2,7 @@
 
 Just scores and ranks poker hands. 
 Given an array of two-card (Texas Hold'em) hands, and a fully-dealt board, this algorithm gives you the rankings for each hand. 
-See `index.ts` for an example.
+See `src/samples/ScoreAndRank.ts` for an example.
 
 Fun for the whole family!
 
