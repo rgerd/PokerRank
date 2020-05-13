@@ -18,7 +18,6 @@ import { getFullScore } from './PokerRankEval';
 //     { value: 8, suit: 'd' }
 // ]
 // [ 3, 2, 0, 1, 4 ]
-// TODO: Communicate ties
 export function scoreHands(hands: TexasHoldEmHand[], board: TexasHoldEmBoard): number[][]
 {
     const rawScores: number[][] = [];

@@ -1,7 +1,7 @@
 {
   "name": "poker-rank",
   "version": "1.0.0",
-  "main": "built/index.js",
+  "main": "samples/index.js",
   "scripts": {
     "build": "eslint --fix --ext .ts src && tsc --build",
     "run": "node .",

@@ -1,7 +1,7 @@
-import { TexasHoldEmHand, TexasHoldEmBoard } from "./PokerRankTypes";
-import { getBestHand } from "./PokerRankEval";
-import * as PokerRank from "./PokerRank";
-import * as Debug from "./PokerRankDebug";
+import { TexasHoldEmHand, TexasHoldEmBoard } from "../lib/PokerRankTypes";
+import { getBestHand } from "../lib/PokerRankEval";
+import * as PokerRank from "../lib/PokerRank";
+import * as Debug from "../lib/PokerRankDebug";
 
 function main()
 {
