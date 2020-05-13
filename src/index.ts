@@ -1,5 +1,5 @@
 import * as PokerRank from "./PokerRank";
-import * as Debug from "./PokerRankDebug"
+import * as Debug from "./PokerRankDebug";
 
 function main()
 {
