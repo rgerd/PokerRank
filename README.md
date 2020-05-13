@@ -1,7 +1,8 @@
 # PokerRank
 
-Literally just ranks poker hands. 
+Just scores and ranks poker hands. 
 Given an array of two-card (Texas Hold'em) hands, and a fully-dealt board, this algorithm gives you the rankings for each hand. 
+See `index.ts` for an example.
 
 Fun for the whole family!
 
@@ -36,7 +37,8 @@ Because:
 1. The last hand has two pairs (2 10's & 2 3's).
 2. The second hand has a high pair of 13's (either ace or king depending on how you play).
 3. The fourth hand has a low pair of 3's.
-4. The first and third have nothing of note, and share the high card of 13 from the board, so they're equivalent.
+4. The first and third have nothing of note, and share the high card of 13 from the board. However,
+the first has an 11 and the third only has a 5, and so the first outranks the third.
 
 ## TODO:
 

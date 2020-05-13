@@ -1,9 +1,11 @@
+import { TexasHoldEmHand, TexasHoldEmBoard } from "./PokerRankTypes";
+import { getBestHand } from "./PokerRankEval";
 import * as PokerRank from "./PokerRank";
 import * as Debug from "./PokerRankDebug";
 
 function main()
 {
-    const hands: PokerRank.TexasHoldEmHand[] = [
+    const hands: TexasHoldEmHand[] = [
         Debug.GenerateTexasHoldEmHand(),
         Debug.GenerateTexasHoldEmHand(),
         Debug.GenerateTexasHoldEmHand(),
@@ -11,11 +13,16 @@ function main()
         Debug.GenerateTexasHoldEmHand()
     ];
 
-    const board: PokerRank.TexasHoldEmBoard = Debug.GenerateTexasHoldEmBoard();
+    const board: TexasHoldEmBoard = Debug.GenerateTexasHoldEmBoard();
 
     console.log(hands);
     console.log(board);
-    console.log(PokerRank.Rank(hands, board));
+    
+    const rawScores = PokerRank.scoreHands(hands, board);
+    const ranked = PokerRank.rankScores(rawScores);
+    
+    console.log(rawScores.map((rawScore) => getBestHand(rawScore)));
+    console.log(ranked);
 }
 
 main();
